@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raeye Dining and experience</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <div class="brand"><img src="logo.png" alt="logo raeye" class="logo"></div>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#ambience">Ambience</a></li>
+          <li><a href="#m enu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-bg" style="background-image: url('depan2.jpg');"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <h1 class="hero-title">RAEYE MEDAN</h1>
+        <p class="hero-desc">Experience luxury, ambiance & exclusive nights.</p>
+        <div class="cta">
+          <a class="btn" href="#ambience">Explore Ambience</a>
+          <a class="btn ghost" href="#contact">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AMBIENCE -->
+    <section id="ambience" class="section">
+      <h2 class="section-title reveal">Ambience & Gallery</h2>
+      <div class="photos reveal" id="photos">
+        <img src="ambient2.jpg" alt="dish closeup">
+        <img src="ambient3.jpg" alt="bar counter">
+        <img src="ambient4.jpg" alt="live music">
+        <img src="depan.jpg" alt="interior">
+         <img src="ambient5.jpg" alt="interior">
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section">
+      <h2 class="section-title reveal">Menu Highlights</h2>
+      <div class="menu-grid reveal">
+        <div class="card">
+          <h4>Seared Salmon</h4>
+          <p>Soy-glazed salmon, seasonal greens.</p>
+        </div>
+        <div class="card">
+          <h4>Truffle Fries</h4>
+          <p>Crisp fries, truffle oil & parmesan.</p>
+        </div>
+        <div class="card">
+          <h4>Midnight Martini</h4>
+          <p>House gin, lavender infusion.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="section-title reveal">Contact & Booking</h2>
+      <div class="contact reveal">
+        <div class="card">
+          <h4>Visit Us</h4>
+          <p>Jl. Putri Merak Jingga No.13, Kesawan, Kec. Medan, Medan, Indonesia 20111</p>
+          <h4>Phone</h4>
+          <p>0812-3456-7890</p>
+          <h4>Email</h4>
+          <p>raeyeindonesia@gmail.com</p>
+        </div>
+        <div class="card">
+          <form id="bookForm">
+            <input name="name" placeholder="Nama Anda" required>
+            <input type="tel" name="phone" placeholder="0812xxxxxxx" required>
+            <input type="datetime-local" name="time" required>
+            <textarea name="note" placeholder="Catatan (opsional)" rows="3"></textarea>
+            <button type="submit">Kirim Reservasi</button>
+            <p id="formMsg"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Copyright © Raeye 2025. All Right Reserved. PT Sumber Bahagia Bersama</p>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal">
+    <div class="panel">
+      <button class="close" id="closeModal">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
